@@ -2,7 +2,7 @@
 After setting your Ubuntu AWS EC2 server, You can follow below steps to create subdomain.
 ####Make subdomain directory
 ```javascript
-sudo mkdir subdomain.mywebsite.com to your www directory
+sudo mkdir subdomain.mywebsite.com to your /var/www directory
 
 OR
 

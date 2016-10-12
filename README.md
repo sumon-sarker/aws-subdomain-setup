@@ -31,7 +31,7 @@ If `subdomain.mywebsite.com.conf` is not available then follow below command <br
 `sudo cp 000-default.conf subdomain.mywebsite.com.conf` <br/>
 Now edit and save `subdomain.mywebsite.com.conf` file like as below <br/>
 ```javascript
-&lt;VirtualHost *:80&gt;
+<VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 	ServerName subdomain.mywebsite.com
 	ServerAlias subdomain.mywebsite.com
@@ -39,7 +39,7 @@ Now edit and save `subdomain.mywebsite.com.conf` file like as below <br/>
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
-&lt;/VirtualHost&gt;
+</VirtualHost>
 ```
 
 ###Enable the subdomain

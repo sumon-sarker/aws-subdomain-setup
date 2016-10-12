@@ -10,7 +10,7 @@ OR
 
 ##Create a index.html file for your subdonain
 ###Example
-`sudo touch /var/www/subdomain.yourwebsite.com/index.html`
+`sudo touch /var/www/subdomain.yourwebsite.com/index.html` <br/>
 `sudo nano /var/www/subdomain.yourwebsite.com/index.html`
 Add some HTML as your need
 `^O`

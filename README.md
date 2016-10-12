@@ -1,10 +1,10 @@
 # AWS subdomain setup (LAMP Server)
 
-After setting your AWS EC2 server, You can follow below steps to create subdomain.
+After setting your Ubuntu AWS EC2 server, You can follow below steps to create subdomain.
 
 ###Make subdomain directory
 `sudo mkdir subdomain.yourwebsite.com' to your `www` directory <br/>
-####OR<br/>
+#####OR<br/>
 `sudo mkdir -p /var/www/subdomain.yourwebsite.com'
 
 ###Create an index.html file for your subdomain

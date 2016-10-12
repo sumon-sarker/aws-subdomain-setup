@@ -3,9 +3,13 @@
 After setting your Ubuntu AWS EC2 server, You can follow below steps to create subdomain.
 
 ###Make subdomain directory
-`sudo mkdir subdomain.mywebsite.com` to your `www` directory <br/>
-#####OR<br/>
-`sudo mkdir -p /var/www/subdomain.mywebsite.com`
+```javascript
+sudo mkdir subdomain.mywebsite.com to your 'www' directory
+``
+#####OR
+```javascript
+sudo mkdir -p /var/www/subdomain.mywebsite.com
+```
 
 ###Create an index.html file for your subdomain
 `sudo touch /var/www/subdomain.mywebsite.com/index.html` <br/>

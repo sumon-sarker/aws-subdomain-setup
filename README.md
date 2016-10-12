@@ -22,7 +22,7 @@ sudo chown -R user:group /var/www/subdomain.mywebsite.com
 ```
 Here `user` = username, `group` = groupname <br/>
 
-With the code above make sure you change `user` to the user you are acting as. By default on Ubuntu 14.04 your `user` name will be `ubuntu`. The group, as mentioned above, is the owner-group. In Ubuntu, the default is `www-data`. So the line would end up looking like this <br/>
+With the code above make sure you change `user` to the user you are acting as. By default on `Ubuntu 14.04` your `user` name will be `ubuntu`. The group, as mentioned above, is the owner-group. In `Ubuntu 14.04`, the default is `www-data`. So the line would end up looking like this <br/>
 ```javascript
 sudo chown -R ubuntu:www-data /var/www/subdomain.mywebsite.com
 ```

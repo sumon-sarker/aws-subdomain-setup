@@ -30,7 +30,7 @@ Now your user (either through SSH or SFTP should have the right the modify `/var
 If `subdomain.mywebsite.com.conf` is not available then follow below command <br/>
 `sudo cp 000-default.conf subdomain.mywebsite.com.conf` <br/>
 Now edit and save `subdomain.mywebsite.com.conf` file like as below <br/>
-`<VirtualHost *:80>
+```&lt;VirtualHost *:80&gt;
 	ServerAdmin webmaster@localhost
 	ServerName subdomain.mywebsite.com
 	ServerAlias subdomain.mywebsite.com
@@ -38,8 +38,8 @@ Now edit and save `subdomain.mywebsite.com.conf` file like as below <br/>
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
-<\/VirtualHost>
-`
+&lt;/VirtualHost&gt;
+```
 
 ###Enable the subdomain
 `sudo a2ensite subdomain.mywebsite.conf`

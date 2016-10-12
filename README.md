@@ -2,8 +2,7 @@
 
 After setting your AWS EC2 server, You can follow below steps to create subdomain.
 
-##Make subdomain directory
-###Example
+###Make subdomain directory
 `sudo mkdir subdomain.yourwebsite.com' to your `www` directory <br/>
 ####OR<br/>
 `sudo mkdir -p /var/www/subdomain.yourwebsite.com'
@@ -42,10 +41,10 @@ Now edit and save `subdomain.yourwebsite.com.conf` file like as below <br/>
 <\/VirtualHost>
 `
 
-##Enable the subdomain
+###Enable the subdomain
 `sudo a2ensite subdomain.yourwebsite.conf`
 
-##Restart Apache Server
+###Restart Apache Server
 `sudo service apache2 restart`
 
 ###Setup AWS Route53

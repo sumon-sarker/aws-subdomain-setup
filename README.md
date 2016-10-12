@@ -30,7 +30,8 @@ Now your user (either through SSH or SFTP should have the right the modify `/var
 If `subdomain.mywebsite.com.conf` is not available then follow below command <br/>
 `sudo cp 000-default.conf subdomain.mywebsite.com.conf` <br/>
 Now edit and save `subdomain.mywebsite.com.conf` file like as below <br/>
-```&lt;VirtualHost *:80&gt;
+```javascript
+&lt;VirtualHost *:80&gt;
 	ServerAdmin webmaster@localhost
 	ServerName subdomain.mywebsite.com
 	ServerAlias subdomain.mywebsite.com

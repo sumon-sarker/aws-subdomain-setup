@@ -60,7 +60,8 @@ sudo service apache2 restart
 ```
 ####Setup AWS Route53
 Go to AWS Route53 `Hosted Zone` <br/>
-Go to `Create Recurd Set` type your subdomain name to `Name` field <br/>
+Go to `Create Record Set` type your subdomain name to `Name` field <br/>
+Otherwise use/update your existing ``Record Set`
 Type `A - IPv4 Address` <br/>
 Alias `Yes` <br/>
 Alias target `Select your domain from list` <br/>

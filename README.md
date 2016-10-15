@@ -1,5 +1,9 @@
 ##MySQL Create DB table from another DB
 
+##MySQL Create/Copy table from same DB table
+```javascript
+CREATE TABLE NewTable LIKE TargetTable
+```
 
 ##MySQL Insert DB table from another DB
 
@@ -16,4 +20,4 @@ INSERT INTO NewDB.NewTable (Column1, Column2)
 SELECT column1, column2 FROM OldDB.TargetTable;
 ```
 
-Now enjoy wordpress permalink
+Now enjoy MySQL database

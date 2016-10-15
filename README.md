@@ -1,26 +1,19 @@
-## Wordpress LAMP Server Permalink Fix
+##MySQL Create DB table from another DB
 
-####Open apache config file
+
+##MySQL Insert DB table from another DB
+
+####All columns
 
 ```javascript
-sudo gedit /etc/apache2/apache2.conf
+INSERT INTO NewDB.NewTable
+SELECT * FROM OldDB.TargetTable;
 ```
+####Specific columns
 
-####Find below line from `apache2.conf`
 ```javascript
-<Directory /var/www/>
-```
-
-#####Change `AllowOverride None` to `AllowOverride All`
-
-####Enable rewrite module
-```javascript
-sudo a2enmod rewrite
-```
-
-####Restart apache server
-```javascript
-sudo service apache2 restart
+INSERT INTO NewDB.NewTable (Column1, Column2) 
+SELECT column1, column2 FROM OldDB.TargetTable;
 ```
 
 Now enjoy wordpress permalink

@@ -1,21 +1,25 @@
-##MySQL Create DB table from another DB
+##Edit mysql config file
 ```javascript
-CREATE TABLE TargetDB.NewTable LIKE SourceTable.TargetTable
+/etc/mysql/mysql.conf.d/mysqld.cnf
 ```
-##MySQL Insert DB table from another DB
+##Change bind-address
 ####All columns
 ```javascript
-INSERT INTO NewDB.NewTable
-SELECT * FROM OldDB.TargetTable;
+bind-address = 0.0.0.0
+#skip-networking
 ```
-####Specific columns
+####Change mysql user permission
 ```javascript
-INSERT INTO NewDB.NewTable (Column1, Column2) 
-SELECT column1, column2 FROM OldDB.TargetTable;
+GRANT ALL ON *.* TO 'USER-NAME'@'%' IDENTIFIED BY 'USER-PASSWORD';
+
+OR
+
+GRANT ALL ON DB-NAME.* TO 'USER-NAME'@'%' IDENTIFIED BY 'USER-PASSWORD';
+FLUSH PRIVILEGES;
 ```
-##MySQL Create/Copy table from same DB table
+##Restart mysql
 ```javascript
-CREATE TABLE NewTable LIKE TargetTable
+sudo service mysql restart
 ```
 
 Now enjoy MySQL database

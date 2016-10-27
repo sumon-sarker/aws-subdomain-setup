@@ -1,9 +1,8 @@
-##Edit mysql config file
+####Edit mysql config file
 ```javascript
 /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
-##Change bind-address
-####All columns
+####Change bind-address
 ```javascript
 bind-address = 0.0.0.0
 #skip-networking

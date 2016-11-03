@@ -21,4 +21,20 @@ FLUSH PRIVILEGES;
 sudo service mysql restart
 ```
 
+##If any error Open(/etc/mysql/mysql.conf.d/mysqld.cnf) or (/etc/my.cnf) and Comment below line
+```javascript
+#old_passwords=1
+```
+
+##Check user password length, If 16, then set it to 41
+```javascript
+USE mysql;
+SELECT User,Password,LENGTH(Password) FROM user;
+UPDATE user SET Password=PASSWORD('vicidialnow') WHERE User='root';
+```
+##Restart mysql again
+```javascript
+sudo service mysql restart
+```
+
 Now enjoy MySQL database

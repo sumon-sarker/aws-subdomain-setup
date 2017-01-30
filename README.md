@@ -1,4 +1,13 @@
-### AWS subdomain setup (LAMP server)
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/aws-lamp-server-subdomain-setup)
-### Wordpress LAMP server permalink fix
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/wp-permalink-lamp-server)
+### Instructions to Change PHP Installation
+
+#### Find the php diredoty 
+which php
+
+#### Within the Terminal, run
+sudo nano ~/.bash_profile
+#### Add new path for PHP
+export PATH=/Applications/MAMP/bin/php/php5.4.10/bin:$PATH
+#### In Terminal, run
+source ~/.bash_profile
+
+Now, Done! Happy PHPing :)

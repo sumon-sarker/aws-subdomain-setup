@@ -1,19 +1,9 @@
-### Instructions to Change PHP Installation
+### Instructions to Use Custom file extensions for PHP
 
-#### Find the php diredoty
+#### Add .htaccess file to your root directory
 ```javascript
-which php
+AddType application/x-httpd-php .html .htm .ctp .etc
 ```
-#### Within the Terminal, run
-```javascript
-sudo nano ~/.bash_profile
-```
-#### Add new path for PHP
-```javascript
-export PATH=/Applications/MAMP/bin/php/php5.4.10/bin:$PATH
-```
-#### In Terminal, run
-```javascript
-source ~/.bash_profile
-```
-Now, Done! Happy PHPing :)
+Now you can use PHP coding with `.html` `.htm` `.ctp` `.etc`
+
+Happy Apaching :)

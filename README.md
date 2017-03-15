@@ -1,4 +1,2 @@
-### AWS subdomain setup (LAMP server)
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/aws-lamp-server-subdomain-setup)
-### Wordpress LAMP server permalink fix
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/wp-permalink-lamp-server)
+### Search 'foo' and Replace with 'bar'
+UPDATE TableName SET FieldName = REPLACE(FieldName, 'foo', 'bar') WHERE INSTR(FieldName, 'foo') > 0;

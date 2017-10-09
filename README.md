@@ -122,3 +122,6 @@ DELETE FROM category WHERE lft='2' AND rgt='7'
 ### Which Model Is Better for Hierarchical Data?
 
 So, which model is better? It depends. If you need a more flexible model that can be easily updated, use the adjacency list model. In case you have a complex tree that does not need to be updated frequently, choose the nested set model.
+
+
+References [Handling Hierarchical Data in MySQL and PHP](http://www.phpbuilder.com/articles/databases/mysql/handling-hierarchical-data-in-mysql-and-php.html)

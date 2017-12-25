@@ -8,7 +8,7 @@ which php
 ```javascript
 sudo nano ~/.bash_profile
 ```
-#### Add new path for PHP
+#### Add new path for PHP or Run this to Terminal
 ```javascript
 export PATH=/Applications/MAMP/bin/php/php5.4.10/bin:$PATH
 ```

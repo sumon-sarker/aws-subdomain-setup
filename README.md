@@ -1,8 +1,7 @@
-### AWS subdomain setup (LAMP server)
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/aws-lamp-server-subdomain-setup)
-### Wordpress LAMP server permalink fix
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/wp-permalink-lamp-server)
-#### MAcOSX intl
+#### Add to bootstrap.php file
 ```javascript
-brew reinstall -s php71-intl
+Time::setJsonEncodeFormat('yyyy-MM-dd HH:mm:ss');        // For any mutable DateTime
+FrozenTime::setJsonEncodeFormat('yyyy-MM-dd HH:mm:ss');  // For any immutable DateTime
+Date::setJsonEncodeFormat('yyyy-MM-dd HH:mm:ss');        // For any mutable Date
+FrozenDate::setJsonEncodeFormat('yyyy-MM-dd HH:mm:ss');  // For any immutable Date
 ```

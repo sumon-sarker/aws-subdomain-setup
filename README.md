@@ -1,8 +1,17 @@
-### AWS subdomain setup (LAMP server)
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/aws-lamp-server-subdomain-setup)
-### Wordpress LAMP server permalink fix
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/wp-permalink-lamp-server)
 #### MAcOSX intl
 ```javascript
-brew reinstall -s php71-intl
+#UPDATE AUTH CONFIG ASSOCIATION [START]
+  $this->Auth->config(['authenticate' => [
+      'Form' => [
+          'contain' =>false
+      ]
+  ]]);
+  $this->Auth->config(['authenticate' => [
+      'Form' => [
+          'contain' => [
+              'UserGroups'
+          ]
+      ]
+  ]]);
+#UPDATE AUTH CONFIG ASSOCIATION [END]
 ```

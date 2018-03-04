@@ -1,6 +1,6 @@
 #### MAcOSX intl
 ```javascript
-#UPDATE AUTH CONFIG ASSOCIATION [START]
+/*UPDATE AUTH CONFIG ASSOCIATION [START]*/
   $this->Auth->config(['authenticate' => [
       'Form' => [
           'contain' =>false
@@ -13,5 +13,5 @@
           ]
       ]
   ]]);
-#UPDATE AUTH CONFIG ASSOCIATION [END]
+/*UPDATE AUTH CONFIG ASSOCIATION [END]*/
 ```

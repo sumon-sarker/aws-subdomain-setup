@@ -18,23 +18,23 @@
     sudo apt-get install ufw
     Enable: sudo ufw enabe
 
-    Create a user and make the home directory this /var/www/ftp/myApplication
-        create an additional folder called ftp as seen above in case you need to add more folders for other users.
+Create a user and make the home directory this `/var/www/ftp/myApplication`
+create an additional folder called ftp as seen above in case you need to add more folders for other users.
 
-        Create user:
+#### Create user:
 
-        sudo usermod -d /var/www/ftp/myApplication ftpuser
+    sudo usermod -d /var/www/ftp/myApplication ftpuser
 
-    Set its ownership, and be sure to remove write permissions with the following commands
+#### Set its ownership, and be sure to remove write permissions with the following commands
 
     sudo chown nobody:nogroup /var/www/ftp
     sudo chmod a-w /var/www/ftp
 
-    Assign ownership to the myApplication foler to user ftpuser
+#### Assign ownership to the myApplication foler to user ftpuser
 
     sudo chown ftpuser:ftpuser /var/www/ftp/myApplication
 
-    Setup /etc/vsftpd.conf add the following configurations:
+#### Setup `/etc/vsftpd.conf` add the following configurations:
 
     # Allow anonymous FTP? (Disabled by default).
     anonymous_enable=NO
@@ -60,11 +60,11 @@
     userlist_file=/etc/vsftpd.userlist
     userlist_deny=NO
 
-    Create and add user to the user_list:
+#### Create and add user to the user_list:
 
     echo "ftpuser" | sudo tee -a /etc/vsftpd.userlist
 
-    Restart daemon to load new configurations:
+#### Restart daemon to load new configurations:
 
     sudo systemctl restart vsftpd
 

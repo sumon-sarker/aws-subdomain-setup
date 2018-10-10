@@ -16,7 +16,9 @@
 
 ##### Don't have firewall, then install:
     sudo apt-get install ufw
-    Enable: sudo ufw enabe
+    
+#### Enable:
+    sudo ufw enabe
 
 Create a user and make the home directory this `/var/www/ftp/myApplication`
 create an additional folder called ftp as seen above in case you need to add more folders for other users.
@@ -41,28 +43,15 @@ create an additional folder called ftp as seen above in case you need to add mor
     #
     # Uncomment this to allow local users to log in.
     local_enable=YES
+    # Uncomment this to enable any form of FTP write command.
     write_enable=YES
 
     # Prevent the FTP-connected user from accessing any files or commands outside 
     # the directory tree
     chroot_local_user=YES
-
-    # Add a user_sub_token in order to insert the username in our local_root directory 
-    # path so our configuration will work for this user and any future users that might 
-    # be added
-
-    user_sub_token=$USER
-    local_root=/var/www/ftp
-
-    # Set up the configuration so that access is given to a user only when they 
-    # are explicitly added to a list rather than by default
-    userlist_enable=YES
-    userlist_file=/etc/vsftpd.userlist
-    userlist_deny=NO
-
-#### Create and add user to the user_list:
-
-    echo "ftpuser" | sudo tee -a /etc/vsftpd.userlist
+    
+    #Add below line to grant access
+    allow_writeable_chroot=YES
 
 #### Restart daemon to load new configurations:
 

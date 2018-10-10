@@ -4,7 +4,7 @@
 
 #### Make backup of vsftpd.conf:
 
-    sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.orig
+    sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.org
 
 #### Setup firewall rules:
 

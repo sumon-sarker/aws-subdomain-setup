@@ -26,3 +26,21 @@ To
 },
 ....
 ```
+
+### Change Runtime PHP Version
+
+Fire this command:
+```
+which php
+```
+This should output the path to the default PHP install which comes preinstalled by Mac OS X, by default it has to be (Assuming you've not changed it before):
+```
+/usr/bin/php
+```
+
+```
+nano ~/.bash_profile
+export PATH=/Applications/MAMP/bin/php/<YOUR_PHP_VERSION>/bin:$PATH
+
+source ~/.bash_profile
+```

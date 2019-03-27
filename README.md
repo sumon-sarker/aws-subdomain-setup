@@ -1,8 +1,6 @@
-### AWS subdomain setup (LAMP server)
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/aws-lamp-server-subdomain-setup)
-### Wordpress LAMP server permalink fix
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/wp-permalink-lamp-server)
-#### MAcOSX intl
-```javascript
-brew reinstall -s php71-intl
-```
+### ReactNative Fix Module Errors
+- Remove `node_modules` and `package-lock.json`
+- `npm install`
+- `npm install --save react-navigation`
+- `npm install --save react-native-gesture-handler`
+- `react-native link`

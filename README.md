@@ -1,4 +1,4 @@
-#### Unique String Generator (C++)
+#### CSV to SQL File Generator (PHP)
 ```javascript
 <?php
 $fp = fopen('csv.csv', 'r');

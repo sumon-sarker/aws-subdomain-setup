@@ -1,8 +1,10 @@
-### AWS subdomain setup (LAMP server)
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/aws-lamp-server-subdomain-setup)
-### Wordpress LAMP server permalink fix
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/wp-permalink-lamp-server)
-#### MAcOSX intl
+### Find and edit the Alias
 ```javascript
-brew reinstall -s php71-intl
+//On CentOS/RHEL and Fedora
+nano /etc/httpd/conf.d/phpMyAdmin.conf
+//On Debian and Ubuntu
+nano /etc/phpmyadmin/apache.conf
+//Change the alias to your desired url
+#Alias /phpmyadmin /usr/share/phpmyadmin
+Alias /mycustomurl /usr/share/phpmyadmin
 ```

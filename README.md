@@ -22,10 +22,34 @@ void RandomStringGenerator(string prefix, string str, const int len) {
 
 int main(){
 	freopen("pdcode.csv","w",stdout);
-	
-	for(int i=0;i<500000;i++)
+	for(int i=0;i<500000;i++){
 		RandomStringGenerator("PD","00000000",8);
-
+	}
 	return 0;
 }
+```
+#### Unique Code Insert from existing to another table (PHP+MySQL)
+```javascript
+set_time_limit(0);
+$pdo 	= new PDO('mysql:host=<host>;dbname=<database>','<user>','<password>');
+$saving = $pdo;
+$file 	= fopen('<filename>.csv', 'r');
+$exists	= "SELECT code FROM <existing table> WHERE code = '%s'";
+$insert	= "INSERT INTO <new table>(code) VALUES('%s')";
+$index 	= 0;
+$limit 	= 175001;
+while ($csv = fgetcsv($file)) {
+	$query 	= sprintf($exists,$csv[0]);
+	$result	= $pdo->query($query)->fetch(PDO::FETCH_OBJ);
+	if (!$result) {
+		$index++;
+		$code = $csv[0];
+		$save = sprintf($insert,$code);
+		$saving->prepare($save)->execute();
+	}
+	if ($index==$limit) {
+		break;
+	}
+}
+fclose($file);
 ```

@@ -1,8 +1,11 @@
-### AWS subdomain setup (LAMP server)
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/aws-lamp-server-subdomain-setup)
-### Wordpress LAMP server permalink fix
-[Tutorials](https://github.com/sumon-sarker/support-and-solutions/tree/wp-permalink-lamp-server)
-#### MAcOSX intl
+### MySQL Storeprocedure
 ```javascript
-brew reinstall -s php71-intl
+/*OVERRIDE DEFAULT DELIMITER*/
+DELIMITER $$
+CREATE PROCEDURE GroupCount (OUT UserGroupID INT)
+  BEGIN
+    SELECT COUNT(*) FROM users WHERE user_group_id=UserGroupID;
+  END$$
+/*RESET DEFAULT DELIMITER*/
+DELIMITER ;
 ```
